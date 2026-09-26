@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #d1d1d1;
+    color: #303030;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    width: 94%;
+    max-width: 1400px;
+    margin: 35px auto;
+    padding: 25px;
+    background: white;
+    border: 1px solid #ababab;
+    border-radius: 12px;
+}
+
+header, .brand, nav {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    justify-content: space-between;
+    padding: 0 20px 22px;
+}
+
+.brand {
+    gap: 12px;
+}
+
+.brand img {
+    width: 50px;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 21px;
+    letter-spacing: 6px;
+}
+
+.brand p {
+    margin: 4px 0;
+    color: #757575;
+    font-size: 8px;
+    letter-spacing: 4px;
+}
+
+nav {
+    gap: 30px;
+}
+
+nav a {
+    padding: 8px;
+    color: #575757;
+    font-size: 12px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav a:hover, nav .active {
+    color: #303030;
+    border-bottom: 1px solid #303030;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.projects, aside {
+    padding: 25px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+}
+
+.label {
+    margin: 0;
+    color: #757575;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.projects h2 {
+    margin: 10px 0 25px;
+    font-size: 32px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 15px;
+    border-bottom: 1px solid #d1d1d1;
+    transition: .3s;
+}
+
+.project:hover {
+    background: #eeeeee;
+    transform: scale(1.01);
+}
+
+.project img {
+    width: 110px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.project div {
+    flex: 1;
+}
+
+.project h3 {
+    margin: 0 0 7px;
+}
+
+.project p {
+    margin: 0;
+    color: #757575;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.project a {
+    padding: 9px 14px;
+    background: #303030;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.project a:hover {
+    background: #575757;
+    transform: scale(1.05);
+}
+
+aside {
+    align-self: start;
+    background: #f5f5f5;
+}
+
+aside h3 {
+    margin: 0 0 15px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+aside a {
+    display: block;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    color: #575757;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+aside a:hover {
+    background: #303030;
+    color: white;
+}
+
+.trending-title {
+    margin-top: 30px;
+}
+
+aside p {
+    padding-bottom: 10px;
+    color: #575757;
+    font-size: 13px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+footer {
+    padding: 30px 0 5px;
+    text-align: center;
+    color: #575757;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+footer small {
+    font-size: 8px;
+    letter-spacing: 3px;
+}
